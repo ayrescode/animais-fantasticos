@@ -20,8 +20,9 @@ export default class Accordion {
   init() {
     if (this.accordionList.length) {
       // ativar primeiro item
-      this.addAccordionEvent();
       this.toggleAccordion(this.accordionList[0]);
+      this.addAccordionEvent();
     }
+    return this;
   }
 }
